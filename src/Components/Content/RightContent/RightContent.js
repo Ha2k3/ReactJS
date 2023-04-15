@@ -3,140 +3,515 @@ import React, { Component } from 'react';
 class RightContext extends Component {
     render() {
         return (
-                <div className="col-sm-9">
-                    <div className="blog-post-area">
-                        <h2 className="title text-center">Latest From our Blog</h2>
-                        <div className="single-blog-post">
-                            <h3>Girls Pink T Shirt arrived in store</h3>
-                            <div className="post-meta">
-                                <ul>
-                                    <li>
-                                        <i className="fa fa-user" /> Mac Doe
-                                    </li>
-                                    <li>
-                                        <i className="fa fa-clock-o" /> 1:33 pm
-                                    </li>
-                                    <li>
-                                        <i className="fa fa-calendar" /> DEC 5, 2013
-                                    </li>
-                                </ul>
-                                <span>
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star-half-o" />
-                                </span>
+            <div className="col-sm-9 padding-right">
+                <div className="features_items">{/*features_items*/}
+                    <h2 className="title text-center">Features Items</h2>
+                    <div className="col-sm-4">
+                        <div className="product-image-wrapper">
+                            <div className="single-products">
+                                <div className="productinfo text-center">
+                                    <img src="images/home/product1.jpg" alt="" />
+                                    <h2>$56</h2>
+                                    <p>Easy Polo Black Edition</p>
+                                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                </div>
+                                <div className="product-overlay">
+                                    <div className="overlay-content">
+                                        <h2>$56</h2>
+                                        <p>Easy Polo Black Edition</p>
+                                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="">
-                                <img src="images/blog/blog-one.jpg" alt="" />
-                            </a>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
-                            <a className="btn btn-primary" href="">
-                                Read More
-                            </a>
-                        </div>
-                        <div className="single-blog-post">
-                            <h3>Girls Pink T Shirt arrived in store</h3>
-                            <div className="post-meta">
-                                <ul>
-                                    <li>
-                                        <i className="fa fa-user" /> Mac Doe
-                                    </li>
-                                    <li>
-                                        <i className="fa fa-clock-o" /> 1:33 pm
-                                    </li>
-                                    <li>
-                                        <i className="fa fa-calendar" /> DEC 5, 2013
-                                    </li>
+                            <div className="choose">
+                                <ul className="nav nav-pills nav-justified">
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
                                 </ul>
-                                <span>
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star-half-o" />
-                                </span>
                             </div>
-                            <a href="">
-                                <img src="images/blog/blog-two.jpg" alt="" />
-                            </a>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
-                            <a className="btn btn-primary" href="">
-                                Read More
-                            </a>
-                        </div>
-                        <div className="single-blog-post">
-                            <h3>Girls Pink T Shirt arrived in store</h3>
-                            <div className="post-meta">
-                                <ul>
-                                    <li>
-                                        <i className="fa fa-user" /> Mac Doe
-                                    </li>
-                                    <li>
-                                        <i className="fa fa-clock-o" /> 1:33 pm
-                                    </li>
-                                    <li>
-                                        <i className="fa fa-calendar" /> DEC 5, 2013
-                                    </li>
-                                </ul>
-                                <span>
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star" />
-                                    <i className="fa fa-star-half-o" />
-                                </span>
-                            </div>
-                            <a href="">
-                                <img src="images/blog/blog-three.jpg" alt="" />
-                            </a>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
-                            <a className="btn btn-primary" href="">
-                                Read More
-                            </a>
-                        </div>
-                        <div className="pagination-area">
-                            <ul className="pagination">
-                                <li>
-                                    <a href="" className="active">
-                                        1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">2</a>
-                                </li>
-                                <li>
-                                    <a href="">3</a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i className="fa fa-angle-double-right" />
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
-                </div>
-
+                    <div className="col-sm-4">
+                        <div className="product-image-wrapper">
+                            <div className="single-products">
+                                <div className="productinfo text-center">
+                                    <img src="images/home/product2.jpg" alt="" />
+                                    <h2>$56</h2>
+                                    <p>Easy Polo Black Edition</p>
+                                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                </div>
+                                <div className="product-overlay">
+                                    <div className="overlay-content">
+                                        <h2>$56</h2>
+                                        <p>Easy Polo Black Edition</p>
+                                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="choose">
+                                <ul className="nav nav-pills nav-justified">
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="product-image-wrapper">
+                            <div className="single-products">
+                                <div className="productinfo text-center">
+                                    <img src="images/home/product3.jpg" alt="" />
+                                    <h2>$56</h2>
+                                    <p>Easy Polo Black Edition</p>
+                                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                </div>
+                                <div className="product-overlay">
+                                    <div className="overlay-content">
+                                        <h2>$56</h2>
+                                        <p>Easy Polo Black Edition</p>
+                                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="choose">
+                                <ul className="nav nav-pills nav-justified">
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="product-image-wrapper">
+                            <div className="single-products">
+                                <div className="productinfo text-center">
+                                    <img src="images/home/product4.jpg" alt="" />
+                                    <h2>$56</h2>
+                                    <p>Easy Polo Black Edition</p>
+                                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                </div>
+                                <div className="product-overlay">
+                                    <div className="overlay-content">
+                                        <h2>$56</h2>
+                                        <p>Easy Polo Black Edition</p>
+                                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                    </div>
+                                </div>
+                                <img src="images/home/new.png" className="new" alt="" />
+                            </div>
+                            <div className="choose">
+                                <ul className="nav nav-pills nav-justified">
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="product-image-wrapper">
+                            <div className="single-products">
+                                <div className="productinfo text-center">
+                                    <img src="images/home/product5.jpg" alt="" />
+                                    <h2>$56</h2>
+                                    <p>Easy Polo Black Edition</p>
+                                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                </div>
+                                <div className="product-overlay">
+                                    <div className="overlay-content">
+                                        <h2>$56</h2>
+                                        <p>Easy Polo Black Edition</p>
+                                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                    </div>
+                                </div>
+                                <img src="images/home/sale.png" className="new" alt="" />
+                            </div>
+                            <div className="choose">
+                                <ul className="nav nav-pills nav-justified">
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="product-image-wrapper">
+                            <div className="single-products">
+                                <div className="productinfo text-center">
+                                    <img src="images/home/product6.jpg" alt="" />
+                                    <h2>$56</h2>
+                                    <p>Easy Polo Black Edition</p>
+                                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                </div>
+                                <div className="product-overlay">
+                                    <div className="overlay-content">
+                                        <h2>$56</h2>
+                                        <p>Easy Polo Black Edition</p>
+                                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="choose">
+                                <ul className="nav nav-pills nav-justified">
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to wishlist</a></li>
+                                    <li><a href="#"><i className="fa fa-plus-square" />Add to compare</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>{/*features_items*/}
+                <div className="category-tab">{/*category-tab*/}
+                    <div className="col-sm-12">
+                        <ul className="nav nav-tabs">
+                            <li className="active"><a href="#tshirt" data-toggle="tab">T-Shirt</a></li>
+                            <li><a href="#blazers" data-toggle="tab">Blazers</a></li>
+                            <li><a href="#sunglass" data-toggle="tab">Sunglass</a></li>
+                            <li><a href="#kids" data-toggle="tab">Kids</a></li>
+                            <li><a href="#poloshirt" data-toggle="tab">Polo shirt</a></li>
+                        </ul>
+                    </div>
+                    <div className="tab-content">
+                        <div className="tab-pane fade active in" id="tshirt">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery1.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery2.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery3.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery4.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="tab-pane fade" id="blazers">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery4.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery3.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery2.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery1.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="tab-pane fade" id="sunglass">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery3.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery4.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery1.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery2.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="tab-pane fade" id="kids">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery1.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery2.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery3.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery4.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="tab-pane fade" id="poloshirt">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery2.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery4.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery3.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
+                                            <img src="images/home/gallery1.jpg" alt="" />
+                                            <h2>$56</h2>
+                                            <p>Easy Polo Black Edition</p>
+                                            <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>{/*/category-tab*/}
+                <div className="recommended_items">{/*recommended_items*/}
+                    <h2 className="title text-center">recommended items</h2>
+                    <div id="recommended-item-carousel" className="carousel slide" data-ride="carousel">
+                        <div className="carousel-inner">
+                            <div className="item active">
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
+                                                <img src="images/home/recommend1.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
+                                                <img src="images/home/recommend2.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
+                                                <img src="images/home/recommend3.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
+                                                <img src="images/home/recommend1.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
+                                                <img src="images/home/recommend2.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
+                                                <img src="images/home/recommend3.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a className="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+                            <i className="fa fa-angle-left" />
+                        </a>
+                        <a className="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+                            <i className="fa fa-angle-right" />
+                        </a>
+                    </div>
+                </div>{/*/recommended_items*/}
+            </div>
         );
     }
 }

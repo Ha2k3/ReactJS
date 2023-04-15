@@ -7,15 +7,17 @@ import LeftContent from './Components/Content/LeftContent/LeftContent';
 import RightContent from './Components/Content/RightContent/RightContent';
 function App() {
   return (
-    <body>
+    <div>
       <Header></Header>
       <Slider></Slider>
-      <div className='row'>
-        <LeftContent></LeftContent>
-        <RightContent></RightContent>
+      <div class="container">
+        <div className='row'>
+          <LeftContent></LeftContent>
+          <RightContent></RightContent>
+        </div>
       </div>
       <Footer></Footer>
-      </body>
+    </div>
   );
 }
 
