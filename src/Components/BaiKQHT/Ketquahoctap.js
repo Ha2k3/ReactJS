@@ -15,19 +15,21 @@ class Ketquahoctap extends Component {
     }
     handleChange = async (event) => {
         event.preventDefault();
-         let key = event.target.name;
+        let key = event.target.name;
         let val = event.target.value;
         await this.setState({ [key]: val });
-        await this.setState((state) => ({
-            avg: parseFloat((parseFloat(state.hk1) + parseFloat(state.hk2)) / 2),
-        }));
-        this.setResult();
-        this.setXL();
+        this.setAvg();
     };
     handleSubmit = (event) => {
         event.preventDefault();
-        alert("Bạn là học sinh " + this.state.xl);
+        this.setResult();
+        this.setXL();
     };
+    setAvg=()=>{
+        this.setState((state) => ({
+            avg: parseFloat((parseFloat(state.hk1) + parseFloat(state.hk2)) / 2),
+        }));
+    }
     setResult = () => {
         if (this.state.avg >= 4.5) this.setState({ result: "Được lên lớp" });
         else if (this.state.avg < 4.5) this.setState({ result: "Ở lại lớp" });
@@ -57,7 +59,7 @@ class Ketquahoctap extends Component {
                             required
                             onChange={this.handleChange}
                         />
-                        
+
                     </div>
                     <div className='form-group'>
                         <label htmlFor='hk2'>Điểm học kì 2: </label>
@@ -72,7 +74,6 @@ class Ketquahoctap extends Component {
                             required
                             onChange={this.handleChange}
                         />
-                        {/* <div className='invalid-feedback'>Điểm không hợp lệ</div> */}
                     </div>
                     <div className='form-group'>
                         <label htmlFor='dtb'>Điểm trung bình: </label>
@@ -100,7 +101,7 @@ class Ketquahoctap extends Component {
                             type='text'
                             className='form-control'
                             readOnly
-                            onChange={this.state.xl}
+                            value={this.state.xl}
                         />
 
                     </div>

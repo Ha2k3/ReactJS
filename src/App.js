@@ -13,6 +13,8 @@ import Vd3 from './Components/Hooks/Vd3';
 import Car from './Components/Hooks/Car';
 import Login from './Components/Hooks/Login';
 import Ketquahoctap from './Components/BaiKQHT/Ketquahoctap';
+import Menu from './Components/VdMenu/Menu';
+import DrinkMenu from './Components/VdMenu/DrinkMenu';
 function App() {
   return (
     <div>
@@ -33,7 +35,10 @@ function App() {
       {/* <Car></Car> */}
       {/* <Login></Login> */}
       {/* <DemoForm1></DemoForm1> */}
-      <Ketquahoctap></Ketquahoctap>
+      {/* <Ketquahoctap></Ketquahoctap> */}
+      {/* <Menu></Menu> */}
+      <DrinkMenu></DrinkMenu>
+
     </div>
   );
 }
